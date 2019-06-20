@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 var userRoute = require('./routes/user.route');
+var cookieParser = require('cookie-parser');
 
 var port = 3000;
 
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
+app.use(cookieParser());
 
 app.get('/', function(req, res) {
     res.render('index', {
