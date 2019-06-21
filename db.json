@@ -1,34 +1,16 @@
 {
   "users": [
     {
-      "name": "gggg",
-      "id": "g819JjROV"
+      "name": "Hoang Nam",
+      "id": "g819JjROV",
+      "email": "abc@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70"
     },
     {
-      "name": "jhgjhgjhgg",
-      "id": "ED1BZxUH-"
-    },
-    {
-      "name": "sdfsdfsdfasf",
-      "id": "sOzhNhQCa"
-    },
-    {
-      "name": "hhhh",
-      "id": "48OZ_biRT"
-    },
-    {
-      "name": "hghghg",
-      "id": "UM_k1MgyH"
-    },
-    {
-      "name": "dhfghfgh",
-      "phone": "565656",
-      "id": "wSQbVwkS4"
-    },
-    {
-      "name": "gfcdf",
-      "phone": "fdgfsdf",
-      "id": "dVbrp7JjA"
+      "name": "Hong Yen",
+      "id": "ksdADjsaD33Sd",
+      "email": "hongyen@gmail.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
     }
   ]
 }
