@@ -9,5 +9,6 @@ html
                     a(href='/') Home
                 li
                     a(href='/users') Users
-        p= user.name
+        if user
+            p= user.name
         block content

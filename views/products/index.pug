@@ -1,0 +1,13 @@
+extends ../layouts/common
+
+block content
+    div.container
+        h1 Products
+        table.table
+            tr
+                th Name
+                th Discription
+            each product in products
+                tr
+                    td= product.name
+                    td= product.description
