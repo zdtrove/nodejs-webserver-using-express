@@ -10,7 +10,6 @@ module.exports.postLogin = function(req, res) {
     var password = req.body.password;
     var user = db.get('users').find({ email : email }).value();
     var hashedPassword = md5(password);
-    console.log(hashedPassword);
     if (!user) {
         res.render('auth/login', {
             errors : [
