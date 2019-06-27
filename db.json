@@ -141,5 +141,14 @@
       "image": "https://didongviet.vn/pub/media/catalog/product//i/p/iphone-7-plus-128gb-quoc-te-like-new-den-didongviet_1_1_1.jpg",
       "description": "dsc 10"
     }
+  ],
+  "sessions": [
+    {
+      "id": "pV3w-ypyd",
+      "cart": {
+        "name_1": 2,
+        "name_2": 1
+      }
+    }
   ]
 }
