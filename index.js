@@ -6,10 +6,15 @@ var userRoute = require('./routes/user.route');
 var authRoute = require('./routes/auth.route');
 var productRoute = require('./routes/product.route');
 var cartRoute = require('./routes/cart.route');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/express-demo');
 
 var cookieParser = require('cookie-parser');
 var authMiddleware = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
+
+var apiProductRoute = require('./api/routes/product.route');
 
 var port = 3000;
 
@@ -33,6 +38,7 @@ app.use('/users', authMiddleware.requireAuth, userRoute);
 app.use('/auth', authRoute);
 app.use('/products', productRoute);
 app.use('/cart', cartRoute);
+app.use('/api/products', apiProductRoute);
 
 app.listen(port, function() {
     console.log('Server listening on port ' + port);
