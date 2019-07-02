@@ -8,7 +8,7 @@ var productRoute = require('./routes/product.route');
 var cartRoute = require('./routes/cart.route');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/express-demo');
+mongoose.connect(process.env.MONGO_URL);
 
 var cookieParser = require('cookie-parser');
 var authMiddleware = require('./middlewares/auth.middleware');
@@ -16,7 +16,7 @@ var sessionMiddleware = require('./middlewares/session.middleware');
 
 var apiProductRoute = require('./api/routes/product.route');
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 app.set('view engine', 'pug');
 app.set('views', './views');
